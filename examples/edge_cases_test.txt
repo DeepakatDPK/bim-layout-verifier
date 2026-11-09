@@ -1,0 +1,107 @@
+# Edge Cases Test File
+# Tests boundary conditions, special characters, and complex scenarios
+
+# Test 1: Very small dimensions (precision test)
+LAYER_001: Micro_Detail
+  POSITION: 0.001, 0.002
+  DIMENSION: 10 x 10
+  MATERIAL: Metal
+
+# Test 2: Very large dimensions (scale test)
+LAYER_002: Mega_Structure
+  POSITION: 999999.0, 999999.0
+  DIMENSION: 500000 x 300000
+  MATERIAL: Steel
+
+# Test 3: Negative coordinates (relative positioning)
+LAYER_003: Offset_Component
+  POSITION: -100.0, -50.0
+  DIMENSION: 500 x 500
+  MATERIAL: Plastic
+
+# Test 4: Special characters in names
+LAYER_004: Wall"_A"
+  POSITION: 100.0, 200.0
+  DIMENSION: 1000 x 1000
+  MATERIAL: Concrete
+
+LAYER_005: Pipe#3-4
+  POSITION: 300.0, 400.0
+  DIMENSION: 500 x 500
+  MATERIAL: Steel
+
+LAYER_006: Beam^Load_Bearing
+  POSITION: 500.0, 600.0
+  DIMENSION: 800 x 800
+  MATERIAL: Reinforced_Concrete
+
+# Test 5: Very long identifiers
+LAYER_007: UltraLongIdentifierForTestingEdgeCasesAndEnsuringProperStringHandlingInTheParserModule12345
+  POSITION: 700.0, 800.0
+  DIMENSION: 600 x 600
+  MATERIAL: Wood
+
+# Test 6: Unicode characters in materials (if supported)
+LAYER_008: 特殊材料_Test
+  POSITION: 900.0, 1000.0
+  DIMENSION: 700 x 700
+  MATERIAL: 钢筋混凝土
+
+# Test 7: Zero and near-zero dimensions (validation edge case)
+LAYER_009: Thin_Layer
+  POSITION: 1100.0, 1200.0
+  DIMENSION: 1 x 1000
+  MATERIAL: Film
+
+# Test 8: Multiple decimal places
+LAYER_010: Precision_Test
+  POSITION: 123.456789, 987.654321
+  DIMENSION: 1234.567890 x 987.654321
+  MATERIAL: Aluminum
+
+# Test 9: Scientific notation (if parser supports)
+LAYER_011: Nano_Scale
+  POSITION: 1.23e-3, 4.56e-3
+  DIMENSION: 1.0e+2 x 2.0e+2
+  MATERIAL: Graphene
+
+# Test 10: Whitespace variations
+LAYER_012: Tab_Separated
+  POSITION:	100.0	200.0
+  DIMENSION:	300	400
+  MATERIAL: Steel
+
+# Test 11: Mixed case identifiers
+LAYER_013: Mixed_Case_ID
+  POSITION: 300.0, 400.0
+  DIMENSION: 500 x 500
+  MATERIAL: Brass
+
+LAYER_014: lowercase_id
+  POSITION: 500.0, 600.0
+  DIMENSION: 600 x 600
+  MATERIAL: Copper
+
+# Test 12: Numbers in identifiers
+LAYER_015: Layer_123_Column_456
+  POSITION: 700.0, 800.0
+  DIMENSION: 700 x 700
+  MATERIAL: Titanium
+
+# Test 13: Very long material description
+LAYER_016: Complex_Material
+  POSITION: 900.0, 1000.0
+  DIMENSION: 800 x 800
+  MATERIAL: High-Strength Low-Alloy Steel with 50ksi Yield Strength and 60ksi Ultimate Tensile Strength, ASTM A572 Grade 50
+
+# Test 14: Empty notes field (should be handled gracefully)
+LAYER_017: No_Notes
+  POSITION: 1100.0, 1200.0
+  DIMENSION: 900 x 900
+  MATERIAL: Zinc
+
+# Test 15: Only comments (valid empty file)
+# This is just a comment
+# No actual layers here
+
+END_MARKUP

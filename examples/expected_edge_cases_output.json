@@ -1,0 +1,191 @@
+{
+  "verification_id": "ver_edge_cases_20261109",
+  "timestamp": "2026-11-09T12:08:33Z",
+  "summary": {
+    "total_markups": 15,
+    "verified": 15,
+    "matched": 15,
+    "discrepancies": 0,
+    "confidence_score": 97.8,
+    "processing_time_ms": 189
+  },
+  "details": [
+    {
+      "markup_id": "LAYER_001",
+      "bim_match": "Micro_Detail",
+      "confidence": 0.99,
+      "status": "verified",
+      "position_match": true,
+      "dimension_match": true,
+      "notes": "Precision test passed (0.001m coordinates)"
+    },
+    {
+      "markup_id": "LAYER_002",
+      "bim_match": "Mega_Structure",
+      "confidence": 0.99,
+      "status": "verified",
+      "position_match": true,
+      "dimension_match": true,
+      "notes": "Scale test passed (500,000mm dimensions)"
+    },
+    {
+      "markup_id": "LAYER_003",
+      "bim_match": "Offset_Component",
+      "confidence": 0.99,
+      "status": "verified",
+      "position_match": true,
+      "dimension_match": true,
+      "notes": "Negative coordinates handled correctly"
+    },
+    {
+      "markup_id": "LAYER_004",
+      "bim_match": "Wall\"A\"",
+      "confidence": 0.98,
+      "status": "verified",
+      "position_match": true,
+      "dimension_match": true,
+      "notes": "Special characters in identifier parsed correctly"
+    },
+    {
+      "markup_id": "LAYER_005",
+      "bim_match": "Pipe#3-4",
+      "confidence": 0.98,
+      "status": "verified",
+      "position_match": true,
+      "dimension_match": true,
+      "notes": "Hash symbol in identifier handled"
+    },
+    {
+      "markup_id": "LAYER_006",
+      "bim_match": "Beam^Load_Bearing",
+      "confidence": 0.98,
+      "status": "verified",
+      "position_match": true,
+      "dimension_match": true,
+      "notes": "Caret symbol in identifier handled"
+    },
+    {
+      "markup_id": "LAYER_007",
+      "bim_match": "UltraLongIdentifierForTestingEdgeCasesAndEnsuringProperStringHandlingInTheParserModule12345",
+      "confidence": 0.97,
+      "status": "verified",
+      "position_match": true,
+      "dimension_match": true,
+      "notes": "Long identifiers (100+ chars) handled without truncation"
+    },
+    {
+      "markup_id": "LAYER_008",
+      "bim_match": "特殊材料_Test",
+      "confidence": 0.96,
+      "status": "verified",
+      "position_match": true,
+      "dimension_match": true,
+      "notes": "Unicode characters in material names supported"
+    },
+    {
+      "markup_id": "LAYER_009",
+      "bim_match": "Thin_Layer",
+      "confidence": 0.99,
+      "status": "verified",
+      "position_match": true,
+      "dimension_match": true,
+      "notes": "Near-zero dimension (1mm) validated"
+    },
+    {
+      "markup_id": "LAYER_010",
+      "bim_match": "Precision_Test",
+      "confidence": 0.99,
+      "status": "verified",
+      "position_match": true,
+      "dimension_match": true,
+      "notes": "High precision decimals handled correctly"
+    },
+    {
+      "markup_id": "LAYER_011",
+      "bim_match": "Nano_Scale",
+      "confidence": 0.95,
+      "status": "verified",
+      "position_match": true,
+      "dimension_match": true,
+      "notes": "Scientific notation parsed (if supported)"
+    },
+    {
+      "markup_id": "LAYER_012",
+      "bim_match": "Tab_Separated",
+      "confidence": 0.97,
+      "status": "verified",
+      "position_match": true,
+      "dimension_match": true,
+      "notes": "Tab characters in values normalized correctly"
+    },
+    {
+      "markup_id": "LAYER_013",
+      "bim_match": "Mixed_Case_ID",
+      "confidence": 0.98,
+      "status": "verified",
+      "position_match": true,
+      "dimension_match": true,
+      "notes": "Mixed case identifiers case-insensitive matched"
+    },
+    {
+      "markup_id": "LAYER_014",
+      "bim_match": "lowercase_id",
+      "confidence": 0.98,
+      "status": "verified",
+      "position_match": true,
+      "dimension_match": true,
+      "notes": "All lowercase identifier handled"
+    },
+    {
+      "markup_id": "LAYER_015",
+      "bim_match": "Layer_123_Column_456",
+      "confidence": 0.97,
+      "status": "verified",
+      "position_match": true,
+      "dimension_match": true,
+      "notes": "Numeric characters in identifiers parsed correctly"
+    },
+    {
+      "markup_id": "LAYER_016",
+      "bim_match": "Complex_Material",
+      "confidence": 0.96,
+      "status": "verified",
+      "position_match": true,
+      "dimension_match": true,
+      "notes": "Long material description (200+ chars) handled"
+    },
+    {
+      "markup_id": "LAYER_017",
+      "bim_match": "No_Notes",
+      "confidence": 0.99,
+      "status": "verified",
+      "position_match": true,
+      "dimension_match": true,
+      "notes": "Empty notes field handled gracefully"
+    }
+  ],
+  "statistics": {
+    "average_confidence": 0.975,
+    "min_confidence": 0.95,
+    "max_confidence": 0.99,
+    "match_distribution": {
+      "exact": 15,
+      "semantic": 0,
+      "positional": 0
+    },
+    "edge_case_results": {
+      "special_characters": "passed",
+      "unicode_support": "passed",
+      "precision_handling": "passed",
+      "long_identifiers": "passed",
+      "scientific_notation": "partial (depends on parser config)"
+    }
+  },
+  "input_file": "examples/edge_cases_test.txt",
+  "verification_settings": {
+    "threshold": 0.85,
+    "strict_mode": false,
+    "engine": "vector",
+    "threads": 1
+  }
+}

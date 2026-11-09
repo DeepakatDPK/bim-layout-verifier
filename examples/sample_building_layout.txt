@@ -1,0 +1,121 @@
+# Sample Building Layout - Ground Floor
+# This file demonstrates standard markup format for BIM verification
+
+# Primary Structure
+LAYER_001: Exterior_Wall_North
+  POSITION: 0.0, 0.0
+  DIMENSION: 20000 x 12000
+  MATERIAL: Reinforced_Concrete
+  COLOR: #808080
+  NOTE: Main facade wall
+
+LAYER_002: Exterior_Wall_East
+  POSITION: 20000.0, 0.0
+  DIMENSION: 15000 x 12000
+  MATERIAL: Reinforced_Concrete
+  NOTE: East elevation
+
+LAYER_003: Exterior_Wall_South
+  POSITION: 20000.0, 12000.0
+  DIMENSION: 20000 x 12000
+  MATERIAL: Reinforced_Concrete
+  NOTE: South elevation
+
+LAYER_004: Exterior_Wall_West
+  POSITION: 0.0, 12000.0
+  DIMENSION: 20000 x 12000
+  MATERIAL: Reinforced_Concrete
+  NOTE: West elevation
+
+# Structural Columns
+LAYER_005: Column_Grid_A1
+  POSITION: 5000.0, 5000.0
+  DIMENSION: 800 x 800
+  MATERIAL: Steel_Rebar_Concrete
+  ID: COL_A1
+
+LAYER_006: Column_Grid_A2
+  POSITION: 5000.0, 9000.0
+  DIMENSION: 800 x 800
+  MATERIAL: Steel_Rebar_Concrete
+  ID: COL_A2
+
+LAYER_007: Column_Grid_B1
+  POSITION: 15000.0, 5000.0
+  DIMENSION: 800 x 800
+  MATERIAL: Steel_Rebar_Concrete
+  ID: COL_B1
+
+LAYER_008: Column_Grid_B2
+  POSITION: 15000.0, 9000.0
+  DIMENSION: 800 x 800
+  MATERIAL: Steel_Rebar_Concrete
+  ID: COL_B2
+
+# Openings - Doors
+LAYER_009: Door_Main_Entrance
+  POSITION: 10000.0, 6000.0
+  DIMENSION: 1500 x 2400
+  MATERIAL: Glass_Sliding
+  NOTE: Primary building entrance
+
+LAYER_010: Door_Emergency_East
+  POSITION: 18000.0, 3000.0
+  DIMENSION: 1200 x 2100
+  MATERIAL: Steel_Glass
+  NOTE: Emergency exit
+
+# Openings - Windows
+LAYER_011: Window_North_Row1
+  POSITION: 2500.0, 6000.0
+  DIMENSION: 1800 x 1500
+  MATERIAL: Double_Glazed
+  NOTE: Office windows
+
+LAYER_012: Window_North_Row2
+  POSITION: 4500.0, 6000.0
+  DIMENSION: 1800 x 1500
+  MATERIAL: Double_Glazed
+  NOTE: Office windows
+
+# Interior Partitions
+LAYER_013: Partition_Office_Row
+  POSITION: 8000.0, 4000.0
+  DIMENSION: 8000 x 3000
+  MATERIAL: Gypsum_Block
+  NOTE: Office cubicle walls
+
+LAYER_014: Partition_Server_Room
+  POSITION: 12000.0, 7000.0
+  DIMENSION: 3000 x 3000
+  MATERIAL: Concrete_Block
+  NOTE: Secure server area
+
+# Mechanical Systems
+LAYER_015: HVAC_Duct_Main
+  POSITION: 10000.0, 1000.0
+  DIMENSION: 15000 x 1200
+  MATERIAL: Galvanized_Steel
+  NOTE: Primary air distribution
+
+LAYER_016: Electrical_Panel_North
+  POSITION: 3000.0, 11000.0
+  DIMENSION: 2000 x 2400
+  MATERIAL: Steel_Enclosure
+  NOTE: Main electrical distribution
+
+# Finishes
+LAYER_017: Floor_Tile_Common_Area
+  POSITION: 0.0, 0.0
+  DIMENSION: 20000 x 12000
+  MATERIAL: Ceramic_Tile
+  NOTE: Public floor finish
+
+LAYER_018: Ceiling_Tile_Office
+  POSITION: 500.0, 500.0
+  DIMENSION: 19500 x 11500
+  MATERIAL: Mineral_Fiber_Tile
+  NOTE: Suspended ceiling
+
+# End of markup file
+END_MARKUP

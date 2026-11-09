@@ -1,0 +1,175 @@
+{
+  "verification_id": "ver_sample_building_20261109",
+  "timestamp": "2026-11-09T12:08:33Z",
+  "summary": {
+    "total_markups": 18,
+    "verified": 18,
+    "matched": 18,
+    "discrepancies": 0,
+    "confidence_score": 99.2,
+    "processing_time_ms": 312
+  },
+  "details": [
+    {
+      "markup_id": "LAYER_001",
+      "bim_match": "Exterior_Wall_North",
+      "confidence": 0.99,
+      "status": "verified",
+      "position_match": true,
+      "dimension_match": true
+    },
+    {
+      "markup_id": "LAYER_002",
+      "bim_match": "Exterior_Wall_East",
+      "confidence": 0.99,
+      "status": "verified",
+      "position_match": true,
+      "dimension_match": true
+    },
+    {
+      "markup_id": "LAYER_003",
+      "bim_match": "Exterior_Wall_South",
+      "confidence": 0.99,
+      "status": "verified",
+      "position_match": true,
+      "dimension_match": true
+    },
+    {
+      "markup_id": "LAYER_004",
+      "bim_match": "Exterior_Wall_West",
+      "confidence": 0.99,
+      "status": "verified",
+      "position_match": true,
+      "dimension_match": true
+    },
+    {
+      "markup_id": "LAYER_005",
+      "bim_match": "Column_Grid_A1",
+      "confidence": 0.98,
+      "status": "verified",
+      "position_match": true,
+      "dimension_match": true
+    },
+    {
+      "markup_id": "LAYER_006",
+      "bim_match": "Column_Grid_A2",
+      "confidence": 0.98,
+      "status": "verified",
+      "position_match": true,
+      "dimension_match": true
+    },
+    {
+      "markup_id": "LAYER_007",
+      "bim_match": "Column_Grid_B1",
+      "confidence": 0.98,
+      "status": "verified",
+      "position_match": true,
+      "dimension_match": true
+    },
+    {
+      "markup_id": "LAYER_008",
+      "bim_match": "Column_Grid_B2",
+      "confidence": 0.98,
+      "status": "verified",
+      "position_match": true,
+      "dimension_match": true
+    },
+    {
+      "markup_id": "LAYER_009",
+      "bim_match": "Door_Main_Entrance",
+      "confidence": 0.97,
+      "status": "verified",
+      "position_match": true,
+      "dimension_match": true
+    },
+    {
+      "markup_id": "LAYER_010",
+      "bim_match": "Door_Emergency_East",
+      "confidence": 0.97,
+      "status": "verified",
+      "position_match": true,
+      "dimension_match": true
+    },
+    {
+      "markup_id": "LAYER_011",
+      "bim_match": "Window_North_Row1",
+      "confidence": 0.96,
+      "status": "verified",
+      "position_match": true,
+      "dimension_match": true
+    },
+    {
+      "markup_id": "LAYER_012",
+      "bim_match": "Window_North_Row2",
+      "confidence": 0.96,
+      "status": "verified",
+      "position_match": true,
+      "dimension_match": true
+    },
+    {
+      "markup_id": "LAYER_013",
+      "bim_match": "Partition_Office_Row",
+      "confidence": 0.95,
+      "status": "verified",
+      "position_match": true,
+      "dimension_match": true
+    },
+    {
+      "markup_id": "LAYER_014",
+      "bim_match": "Partition_Server_Room",
+      "confidence": 0.95,
+      "status": "verified",
+      "position_match": true,
+      "dimension_match": true
+    },
+    {
+      "markup_id": "LAYER_015",
+      "bim_match": "HVAC_Duct_Main",
+      "confidence": 0.94,
+      "status": "verified",
+      "position_match": true,
+      "dimension_match": true
+    },
+    {
+      "markup_id": "LAYER_016",
+      "bim_match": "Electrical_Panel_North",
+      "confidence": 0.94,
+      "status": "verified",
+      "position_match": true,
+      "dimension_match": true
+    },
+    {
+      "markup_id": "LAYER_017",
+      "bim_match": "Floor_Tile_Common_Area",
+      "confidence": 0.93,
+      "status": "verified",
+      "position_match": true,
+      "dimension_match": true
+    },
+    {
+      "markup_id": "LAYER_018",
+      "bim_match": "Ceiling_Tile_Office",
+      "confidence": 0.93,
+      "status": "verified",
+      "position_match": true,
+      "dimension_match": true
+    }
+  ],
+  "statistics": {
+    "average_confidence": 0.964,
+    "min_confidence": 0.93,
+    "max_confidence": 0.99,
+    "match_distribution": {
+      "exact": 18,
+      "semantic": 0,
+      "positional": 0
+    }
+  },
+  "input_file": "examples/sample_building_layout.txt",
+  "verification_settings": {
+    "threshold": 0.85,
+    "strict_mode": false,
+    "engine": "vector",
+    "threads": 1
+  }
+}

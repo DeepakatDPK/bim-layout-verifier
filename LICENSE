@@ -1,0 +1,71 @@
+MIT License
+
+Copyright (c) 2026 Deepak George
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+Attribution and Acknowledgments
+
+This project was developed by Deepak George and is part of the DnA (Deepak's AI) research
+and development series. The BIM Layout Verifier leverages concepts from vector embedding,
+semantic similarity search, and AI-powered pattern recognition.
+
+Special thanks to:
+- The open-source community for foundational libraries and tools
+- The BIM and AEC industry for inspiring the verification workflow
+- GitHub for providing the hosting platform
+- All contributors who help improve this project
+
+Technical Stack
+- Python 3.14+
+- NumPy for vector operations
+- FAISS/Milvus for approximate nearest neighbor search
+- Standard library argparse, json, os, pathlib
+
+Project Website
+https://github.com/DeepakatDPK/bim-layout-verifier
+
+Contact
+Email: deepak.george@example.com
+GitHub: https://github.com/DeepakatDPK
+
+---
+
+License Exceptions
+
+This license applies to the core BIM Layout Verifier source code and documentation.
+
+Third-party components (if any) are licensed under their respective licenses.
+
+Patents
+This license does not grant any patent rights. Any patents held by the author or
+contributors are licensed separately and should be referenced in the relevant module
+or component documentation.
+
+Warranties
+The author provides this software with the understanding that they are not engaged
+in rendering professional services. The user assumes full responsibility for any
+results obtained from using this software.
+
+Limitation of Liability
+In no event shall the author be liable for any special, indirect, incidental,
+or consequential damages arising from the use or inability to use this software,
+even if advised of the possibility of such damages.
